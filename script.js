@@ -2,7 +2,7 @@
 // 텍스트 작성과 삭제 즉시 실행 함수
 (function(){
   const spanEl = document.querySelector("main h2 span");
-  const txtArr = ['Web Publisher', 'Front-End Developer', 'Web UI Designer', 'UX Designer', 'Back-End Developer'];
+  const txtArr = ['Travel Compliance Check'];
   let index = 0;
   let currentTxt = txtArr[index].split("");
   function writeTxt(){
