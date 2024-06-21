@@ -66,3 +66,24 @@ for (let i = 0; i < scollMoveEl.length; i++) {
   });
 }
 /* End move.js */
+
+/* 페이지 라우팅 처리 */
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("button[data-target]");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const path = event.target.getAttribute("data-target");
+      if (path.startsWith("/")) {
+        // External link handling
+        window.location.href = path;
+      } else {
+        // Internal navigation
+        const section = document.querySelector(path);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  });
+});
