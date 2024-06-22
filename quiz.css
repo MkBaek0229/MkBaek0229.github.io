@@ -1,0 +1,120 @@
+/* Quiz 페이지 전용 스타일 */
+
+/* 기본 스타일 */
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ffefd5;
+}
+
+header {
+  width: 90%;
+  max-width: 600px;
+  gap: 35%;
+  margin: 0 auto;
+  height: auto;
+  color: black; /* 필요에 따라 색상 설정 */
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: auto;
+  color: black; /* 필요에 따라 색상 설정 */
+  background-color: #f0f0f0; /* 필요에 따라 배경색 설정 */
+  padding: 20px;
+}
+header h2 {
+  margin: 0 0 0 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px #ff1493;
+}
+
+header h2 span {
+  color: #ff1493;
+  text-shadow: 2px 2px #ffffff;
+}
+
+/* 뒤로가기 버튼 스타일 */
+#back-button {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#back-button:hover {
+  transform: scale(1.1); /* 이미지 확대 효과 */
+}
+
+#quiz-container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.question {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ff69b4;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  background: #ff69b4;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.choice:hover {
+  background: #ff1493;
+  transform: translateY(-5px);
+}
+
+.choice:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 10px;
+    gap: 45%;
+  }
+  main {
+    width: 100%;
+    padding: 10px;
+  }
+}
