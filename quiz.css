@@ -1,120 +1,109 @@
-/* Quiz 페이지 전용 스타일 */
-
 /* 기본 스타일 */
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffefd5;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
+/* 헤더 스타일 */
 header {
-  width: 90%;
-  max-width: 600px;
-  gap: 35%;
-  margin: 0 auto;
-  height: auto;
-  color: black; /* 필요에 따라 색상 설정 */
+  background-color: #ffffff;
   padding: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-main {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-  height: auto;
-  color: black; /* 필요에 따라 색상 설정 */
-  background-color: #f0f0f0; /* 필요에 따라 배경색 설정 */
-  padding: 20px;
-}
 header h2 {
-  margin: 0 0 0 20px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 2px 2px #ff1493;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #007bff;
 }
 
-header h2 span {
-  color: #ff1493;
-  text-shadow: 2px 2px #ffffff;
-}
-
-/* 뒤로가기 버튼 스타일 */
-#back-button {
+header img {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-#back-button:hover {
-  transform: scale(1.1); /* 이미지 확대 효과 */
+header img:hover {
+  transform: scale(1.1);
 }
 
-#quiz-container {
-  background: white;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+/* 메인 스타일 */
+main {
   width: 90%;
   max-width: 600px;
-  animation: fadeIn 0.5s ease-in-out;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.question {
-  font-size: 1rem;
+main .question {
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #ff69b4;
+  color: #007bff;
 }
 
-.choices {
+main .choices {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.choice {
-  background: #ff69b4;
+main .choice {
+  width: 50%;
+  background-color: #007bff;
   color: white;
-  padding: 15px;
-  margin: 10px 0;
+  padding: 20px;
+  margin: 0 auto;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 10px;
-  transition: background 0.3s ease, transform 0.3s ease;
-  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.choice:hover {
-  background: #ff1493;
-  transform: translateY(-5px);
+main .choice:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
-.choice:disabled {
-  background: #ccc;
+main .choice:disabled {
+  background-color: #ccc;
   cursor: not-allowed;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+main .retry-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+main .retry-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.level-mark {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 20px;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
-  header {
-    width: 100%;
-    padding: 10px;
-    gap: 45%;
-  }
   main {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
   }
 }
