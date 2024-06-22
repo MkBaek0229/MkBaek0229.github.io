@@ -298,20 +298,32 @@ section.quiz-info .container .title .animated-bg {
 
 section.quiz-info .container .quiz-level {
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 section.quiz-info .container .quiz-level .level-info {
-  border: 1px solid black;
-  padding: 1rem 1rem 1.5rem 1rem;
-  width: 30%;
-  float: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.quiz-info .container .quiz-level .level-info:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 section.quiz-info .container .quiz-level .level-info p {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #3c2317;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff69b4;
 }
 /* End quiz-info.css */
 /* media.css */
