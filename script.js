@@ -67,53 +67,7 @@ for (let i = 0; i < scollMoveEl.length; i++) {
 }
 /* End move.js */
 
-/* 퀴즈레벨선택  */
-document.getElementById("level-1").addEventListener("click", function () {
-  addTopicBox("level-1");
+// Start Quiz button functionality
+document.getElementById("start-quiz").addEventListener("click", function () {
+  window.location.href = "quiz.html";
 });
-
-document.getElementById("level-2").addEventListener("click", function () {
-  addTopicBox("level-2");
-});
-
-document.getElementById("level-3").addEventListener("click", function () {
-  addTopicBox("level-3");
-});
-
-document.getElementById("level-4").addEventListener("click", function () {
-  addTopicBox("level-4");
-});
-
-document.getElementById("level-5").addEventListener("click", function () {
-  addTopicBox("level-5");
-});
-
-function addTopicBox(levelId) {
-  const levelBox = document.getElementById(levelId).parentElement;
-  const container = document.querySelector(".quiz-info .container");
-  let existingBox = document.getElementById("topic-box");
-  if (existingBox) {
-    container.removeChild(existingBox);
-  }
-
-  const topicBox = document.createElement("div");
-  topicBox.id = "topic-box";
-  topicBox.classList.add("topic-box");
-
-  topicBox.innerHTML = `
-      <h3>Select a Topic for ${levelId.replace("-", " ")}</h3>
-      <button class="topic-btn" data-level="${levelId}" data-topic="kpop">K-POP</button>
-      <button class="topic-btn" data-level="${levelId}" data-topic="kdrama">K-DRAMA</button>
-      <button class="topic-btn" data-level="${levelId}" data-topic="kfood">K-FOOD</button>
-  `;
-
-  container.appendChild(topicBox);
-
-  document.querySelectorAll(".topic-btn").forEach((button) => {
-    button.addEventListener("click", function () {
-      const level = button.getAttribute("data-level");
-      const topic = button.getAttribute("data-topic");
-      window.location.href = `${level}_${topic}.html`;
-    });
-  });
-}

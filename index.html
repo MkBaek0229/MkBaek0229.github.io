@@ -1,212 +1,276 @@
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-3F9Q5IKQnNRSPesR/0O+4Ho06w0FsnmsIMTpWvO0G5N/E4ZzQybwTUt4b0y1OmohRQa9D96D9arAL3pM+oYF8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <div class="container">
-        <h1>
-          <button data-animation-scroll="true" data-target="/">K-Lover Test</button>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <button data-animation-scroll="true" data-target="#about">
-                About
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#features">
-                Features
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#portfolio">
-                Portfolio
-              </button>
-            </li>
-            <li>
-              <button data-animation-scroll="true" data-target="#contact">
-                Contact
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- //end header -->
-    <!-- main -->
-    <main id="main">
-      <div class="container">
-        <h4>Korea Love Test</h4>
-        <h2 class="active"><span></span></h2>
-        <p>한국을 사랑하는 당신의 마음을 평가합니다</p>
-        <button class="find" data-animation-scroll="true" data-target="#quiz-info">
-          Let's go K-Love Checker
-        </button>
-        <button class="mouse">
-          <i class="fa-solid fa-computer-mouse"></i>
-        </button>
-      </div>
-    </main>
-    <!-- //end Main -->
-    <!-- About Me -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="title">
-          <h4>What is a Korea?</h4>
-          <h2>the Tiger of Asia.</h2>
+  <!DOCTYPE html>
+  <html lang="zxx">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Final Project</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <h1>
+            <button data-animation-scroll="true" data-target="/">
+              K-Lover Test
+            </button>
+          </h1>
+          <nav>
+            <ul>
+              <li>
+                <button data-animation-scroll="true" data-target="#about">
+                  About
+                </button>
+              </li>
+              <li>
+                <button data-animation-scroll="true" data-target="#features">
+                  Features
+                </button>
+              </li>
+              <li>
+                <button data-animation-scroll="true" data-target="#portfolio">
+                  K-Culture
+                </button>
+              </li>
+              <li>
+                <button data-animation-scroll="true" data-target="#contact">
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="about-self">
-          <div class="left">
-            <img src="images/KoreanBBQ.jpg" alt="Korean-BBQ" />
+      </header>
+      <!-- Main -->
+      <main id="main">
+        <div class="container">
+          <h4>Korea Love Test</h4>
+          <h2 class="active"><span></span></h2>
+          <p>한국을 사랑하는 당신의 마음을 평가합니다</p>
+          <button
+            class="find"
+            data-animation-scroll="true"
+            data-target="#quiz-info"
+          >
+            Let's go K-Love Checker
+          </button>
+          <button class="mouse">
+            <i class="fa-solid fa-computer-mouse"></i>
+          </button>
+        </div>
+      </main>
+      <!-- About Me -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="title">
+            <h4>What is Korea?</h4>
+            <h2>The Tiger of Asia</h2>
           </div>
-          <div class="right">
-            <h3>My name is <strong>South korea</strong></h3>
-            <p>
-              Welcome to Korea, the Tiger of Asia! With a heart full of love for
-              this incredible country, we proudly introduce you to the rich
-              culture, history, and innovation that define Korea.
-            </p>
-            <p>
-              Discover Korea's vibrant traditions, cutting-edge technology, and
-              stunning natural landscapes. Whether you're exploring ancient
-              palaces, enjoying K-pop, or indulging in Korean cuisine, we help
-              you
-            </p>
-            <p>
-              experience the best Korea has to offer. Embark on an unforgettable
-              journey with us and celebrate the spirit of Korea with pride!
-            </p>
+          <div class="about-self">
+            <div class="left">
+              <img src="images/KoreanBBQ.jpg" alt="Korean BBQ" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end About Me -->
-    <!-- What I Do -->
-    <section id="features" class="do">
-      <div class="container">
-        <div class="title">
-          <h4>Features</h4>
-          <h2>What I Do</h2>
-        </div>
-        <div class="do-me">
-          <div class="do-inner">
-            <div class="icon">
-              <img width="100" height="100" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-kpop-music-flaticons-lineal-color-flat-icons.png" alt="external-kpop-music-flaticons-lineal-color-flat-icons"/>
-
-            </div>
-            <div class="content">
-              <h3>K-POP</h3>
+            <div class="right">
+              <h3>My name is <strong>South Korea</strong></h3>
               <p>
-                K-Pop refers to Korean popular music and includes globally renowned idol groups like BTS, Blackpink, and EXO. K-Pop is known for its catchy melodies, impressive choreography, and visually appealing music videos. The culture of engaging with fans, known as "fandom culture," is also a significant aspect of K-Pop.              </p>
-            </div>
-          </div>
-          <div class="do-inner">
-            <div class="icon">
-              <img width="100" height="100" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-drama-filmmaking-flaticons-lineal-color-flat-icons.png" alt="external-drama-filmmaking-flaticons-lineal-color-flat-icons"/>            </div>
-            <div class="content">
-              <h3>K-DRAMA</h3>
+                Welcome to Korea, the Tiger of Asia! With a heart full of love
+                for this incredible country, we proudly introduce you to the
+                rich culture, history, and innovation that define Korea.
+              </p>
               <p>
-                Korean dramas are popular for their emotional storylines, excellent acting, and high production quality. Recent hits like "Crash Landing on You," "Itaewon Class," and "Sweet Home" have gained international acclaim through global streaming platforms like Netflix. K-Dramas span various genres, including romance, thriller, and fantasy, and often reflect cultural elements and everyday life in Korea.              </p>
-            </div>
-          </div>
-          <div class="do-inner">
-            <div class="icon">
-              <img width="100" height="100" src="https://img.icons8.com/external-justicon-flat-justicon/100/external-bibimbap-korea-justicon-flat-justicon.png" alt="external-bibimbap-korea-justicon-flat-justicon"/>
-            </div>
-            <div class="content">
-              <h3>K-FOOD</h3>
-              <p>
-                Korean cuisine is gaining popularity worldwide, with dishes like kimchi, bibimbap, bulgogi, and tteokbokki being favorites among many. The influence of the Korean Wave (Hallyu) has led to an increased interest in trying Korean food. Both traditional and fusion Korean dishes are appreciated for their unique flavors and cooking methods, appealing to people who enjoy healthy and delicious meals.              </p>
+                Discover Korea's vibrant traditions, cutting-edge technology,
+                and stunning natural landscapes. Whether you're exploring
+                ancient palaces, enjoying K-pop, or indulging in Korean cuisine,
+                we help you experience the best Korea has to offer. Embark on an
+                unforgettable journey with us and celebrate the spirit of Korea
+                with pride!
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- //end What I Do -->
-    <!-- Background -->
-    <div class="bg"></div>
-    <!-- //end Background-->
-    <!-- PortFolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="title">
-          <h4>PORTFOLIO</h4>
-          <h2>Explore Korean Culture</h2>
+      </section>
+      <!-- Features -->
+      <section id="features" class="do">
+        <div class="container">
+          <div class="title">
+            <h4>Features</h4>
+            <h2>What I Do</h2>
+          </div>
+          <div class="do-me">
+            <div class="do-inner">
+              <div class="icon">
+                <img
+                  width="100"
+                  height="100"
+                  src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-kpop-music-flaticons-lineal-color-flat-icons.png"
+                  alt="external-kpop-music-flaticons-lineal-color-flat-icons"
+                />
+              </div>
+              <div class="content">
+                <h3>K-POP</h3>
+                <p>
+                  K-Pop refers to Korean popular music and includes globally
+                  renowned idol groups like BTS, Blackpink, and EXO. K-Pop is
+                  known for its catchy melodies, impressive choreography, and
+                  visually appealing music videos. The culture of engaging with
+                  fans, known as "fandom culture," is also a significant aspect
+                  of K-Pop.
+                </p>
+              </div>
+            </div>
+            <div class="do-inner">
+              <div class="icon">
+                <img
+                  width="100"
+                  height="100"
+                  src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-drama-filmmaking-flaticons-lineal-color-flat-icons.png"
+                  alt="external-drama-filmmaking-flaticons-lineal-color-flat-icons"
+                />
+              </div>
+              <div class="content">
+                <h3>K-DRAMA</h3>
+                <p>
+                  Korean dramas are popular for their emotional storylines,
+                  excellent acting, and high production quality. Recent hits
+                  like "Crash Landing on You," "Itaewon Class," and "Sweet Home"
+                  have gained international acclaim through global streaming
+                  platforms like Netflix. K-Dramas span various genres,
+                  including romance, thriller, and fantasy, and often reflect
+                  cultural elements and everyday life in Korea.
+                </p>
+              </div>
+            </div>
+            <div class="do-inner">
+              <div class="icon">
+                <img
+                  width="100"
+                  height="100"
+                  src="https://img.icons8.com/external-justicon-flat-justicon/100/external-bibimbap-korea-justicon-flat-justicon.png"
+                  alt="external-bibimbap-korea-justicon-flat-justicon"
+                />
+              </div>
+              <div class="content">
+                <h3>K-FOOD</h3>
+                <p>
+                  Korean cuisine is gaining popularity worldwide, with dishes
+                  like kimchi, bibimbap, bulgogi, and tteokbokki being favorites
+                  among many. The influence of the Korean Wave (Hallyu) has led
+                  to an increased interest in trying Korean food. Both
+                  traditional and fusion Korean dishes are appreciated for their
+                  unique flavors and cooking methods, appealing to people who
+                  enjoy healthy and delicious meals.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-me">
-          <div class="portfolio-inner">
-            <img width="64" height="64" src="https://img.icons8.com/external-justicon-flat-justicon/64/external-hanbok-korea-justicon-flat-justicon-1.png" alt="external-hanbok-korea-justicon-flat-justicon-1"/>
-            <strong>Traditional Clothing</strong>
-            <h3>Hanbok Design</h3>
+      </section>
+      <!-- K-Culture -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="title">
+            <h4>K-Culture</h4>
+            <h2>Explore Korean Culture</h2>
           </div>
-          <div class="portfolio-inner">
-            <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/apple-music.png" alt="apple-music"/>            <strong>Traditional Arts</strong>
-            <h3>Pansori Performance</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img width="100" height="100" src="https://img.icons8.com/color/100/kimchi.png" alt="kimchi"/>
-            <strong>Traditional Food</strong>
-            <h3>Making Kimchi</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img width="100" height="100" src="https://img.icons8.com/color/100/mountain.png" alt="mountain"/>            <strong>Natural Beauty</strong>
-            <h3>Seoraksan</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img width="100" height="100" src="https://img.icons8.com/color/100/movie-projector.png" alt="movie-projector"/>
-            <strong>Modern Culture</strong>
-            <h3>K-Movie</h3>
-          </div>
-          <div class="portfolio-inner">
-            <img width="100" height="100" src="https://img.icons8.com/dusk/100/kimchi-mandu.png" alt="kimchi-mandu"/>            <strong>Festivals</strong>
-            <h3>Chuseok Celebration</h3>
+          <div class="portfolio-me">
+            <div class="portfolio-inner">
+              <img
+                width="64"
+                height="64"
+                src="https://img.icons8.com/external-justicon-flat-justicon/64/external-hanbok-korea-justicon-flat-justicon-1.png"
+                alt="external-hanbok-korea-justicon-flat-justicon-1"
+              />
+              <strong>Traditional Clothing</strong>
+              <h3>Hanbok Design</h3>
+            </div>
+            <div class="portfolio-inner">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/ios-filled/100/apple-music.png"
+                alt="apple-music"
+              />
+              <strong>Traditional Arts</strong>
+              <h3>Pansori Performance</h3>
+            </div>
+            <div class="portfolio-inner">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/color/100/kimchi.png"
+                alt="kimchi"
+              />
+              <strong>Traditional Food</strong>
+              <h3>Making Kimchi</h3>
+            </div>
+            <div class="portfolio-inner">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/color/100/mountain.png"
+                alt="mountain"
+              />
+              <strong>Natural Beauty</strong>
+              <h3>Seoraksan</h3>
+            </div>
+            <div class="portfolio-inner">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/color/100/movie-projector.png"
+                alt="movie-projector"
+              />
+              <strong>Modern Culture</strong>
+              <h3>K-Movie</h3>
+            </div>
+            <div class="portfolio-inner">
+              <img
+                width="100"
+                height="100"
+                src="https://img.icons8.com/dusk/100/kimchi-mandu.png"
+                alt="kimchi-mandu"
+              />
+              <strong>Festivals</strong>
+              <h3>Chuseok Celebration</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-        <!-- //end PortFolio -->
-
-    <!-- Quiz-info -->
-    <section id="quiz-info" class="quiz-info">
-      <div class="container">
-        <div class="title">
-          <img width="100" height="100" src="https://img.icons8.com/fluency/100/south-korea-circular.png" alt="south-korea-circular"/>
-          <h2 class="animated-bg">What is this?</h2>  
-          <p>Take this quiz to see how much you truly love and know about Korean culture.</p>
-        </div>
-        <div class="quiz-level">
-          <div class="level-info">
+      </section>
+      <!-- Quiz-info -->
+      <section id="quiz-info" class="quiz-info">
+        <div class="container">
+          <div class="title">
+            <img
+              width="100"
+              height="100"
+              src="https://img.icons8.com/fluency/100/south-korea-circular.png"
+              alt="south-korea-circular"
+            />
+            <h2 class="animated-bg">What is this?</h2>
+            <p>
+              Take this quiz to see how much you truly love and know about
+              Korean culture.
+            </p>
+          </div>
+          <div class="quiz-level">
+            <button id="start-quiz">
+              <p></p>
+              Start Quiz
+            </button>
+            <!-- <div class="level-info">
               <p id="level-1">K-Lover Level 1</p>
-          </div>
-          <div class="level-info">
+            </div>
+            <div class="level-info">
               <p id="level-2">K-Lover Level 2</p>
-          </div>
-          <div class="level-info">
+            </div>
+            <div class="level-info">
               <p id="level-3">K-Lover Level 3</p>
+            </div> -->
           </div>
-      </div>
-       
         </div>
-       </section>
-    <!-- end Quiz-info With Me -->
-    <!-- script 태그는 수정하지 않습니다. -->
-    <script src="script.js"></script>
-  </body>
+      </section>
+      <script src="script.js"></script>
+    </body>
+  </html>
 </html>

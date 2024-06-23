@@ -302,7 +302,7 @@ section.quiz-info .container .quiz-level {
   flex-wrap: wrap;
 }
 
-section.quiz-info .container .quiz-level .level-info {
+section.quiz-info .container .quiz-level #start-quiz {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -314,12 +314,12 @@ section.quiz-info .container .quiz-level .level-info {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section.quiz-info .container .quiz-level .level-info:hover {
+section.quiz-info .container .quiz-level #start-quiz:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-section.quiz-info .container .quiz-level .level-info p {
+section.quiz-info .container .quiz-level #start-quiz p {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;

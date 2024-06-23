@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Select Level and Topic</h2>
+    </header>
+    <main id="quiz-container">
+      <div id="quiz-options">
+        <div id="level-selection">
+          <h3>Select a Level</h3>
+          <button class="quiz-level-btn" data-level="level-1">Level 1</button>
+          <button class="quiz-level-btn" data-level="level-2">Level 2</button>
+          <button class="quiz-level-btn" data-level="level-3">Level 3</button>
+        </div>
+        <div id="topic-selection" style="display: none">
+          <h3>Select a Topic</h3>
+          <button class="quiz-topic-btn" data-topic="kpop">K-POP</button>
+          <button class="quiz-topic-btn" data-topic="kdrama">K-DRAMA</button>
+          <button class="quiz-topic-btn" data-topic="kfood">K-FOOD</button>
+        </div>
+        <div id="start-quiz" style="display: none">
+          <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+      </div>
+      <div id="quiz-content"></div>
+    </main>
+    <script src="./js/quiz.js" defer></script>
+  </body>
+</html>
